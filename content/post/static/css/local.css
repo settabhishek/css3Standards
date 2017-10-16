@@ -1,0 +1,12 @@
+
+
+.prop {
+    background-color:#B2DCDC;
+    color:#005747;
+    border: 1px solid;
+    padding: 10px;
+    text-align: left;
+    box-sizing: content-box;
+    border-radius:10px;
+    font-size:14px;
+}

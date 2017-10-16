@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/post/maps/</loc>
+    <lastmod>2016-11-03T14:48:29+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/post/reflect/</loc>
+    <lastmod>2016-11-02T14:41:55+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/post/numbers/</loc>
+    <lastmod>2016-10-26T13:59:24+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/post/object/</loc>
+    <lastmod>2016-10-24T13:12:10+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/post/functionparameter/</loc>
+    <lastmod>2016-10-18T16:25:53+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/post/constkeyword/</loc>
+    <lastmod>2016-10-13T12:25:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/post/spreadoperator/</loc>
+    <lastmod>2016-10-03T17:06:21+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/post/destructuring/</loc>
+    <lastmod>2016-10-02T22:36:23+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/post/generator/</loc>
+    <lastmod>2016-09-30T14:26:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/post/templatestring/</loc>
+    <lastmod>2016-09-30T14:21:45+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/post/home/</loc>
+    <lastmod>2016-09-23T12:21:49+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/post/arrow/</loc>
+    <lastmod>2016-09-23T11:56:13+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/post/blockscoping/</loc>
+    <lastmod>2016-09-23T11:53:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/post/promises/</loc>
+    <lastmod>2016-09-23T11:49:29+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/post/modules/</loc>
+    <lastmod>2016-09-23T11:48:26+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/post/classes/</loc>
+    <lastmod>2016-09-23T11:42:03+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/</loc>
+    <lastmod>2016-11-03T14:48:29+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/post/</loc>
+    <lastmod>2016-11-03T14:48:29+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ecmascript2015.herokuapp.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

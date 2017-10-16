@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.29" />
+
+  <title>const keyword &middot; ES6 Features</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://ecmascript2015.herokuapp.com/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://ecmascript2015.herokuapp.com/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://ecmascript2015.herokuapp.com/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+
+  <link rel="shortcut icon" href="https://ecmascript2015.herokuapp.com/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="https://ecmascript2015.herokuapp.com/css/custom_style.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://ecmascript2015.herokuapp.com/">ES6 Features</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/arrow/">Arrow function</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/modules/">Modules</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/promises/">Promises</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/blockscoping/">Block Scoping</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/classes/">Classes</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/generator/">Generator</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/templatestring/">Template Strings</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/destructuring/">Destructuring</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/spreadoperator/">Spread Operators</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/constkeyword/">Constant Keywords</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/functionparameter/">Function Parameters</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/numbers/">Numbers</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/object/">Objects</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/reflect/">Reflect</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/maps/">Map</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/">Home</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small></small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>const keyword</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>13 Oct 2016, 12:25</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+</div>
+
+  <p><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/androidstudio.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script></p>
+
+<p class='custom-heading'>What is this?</p>
+
+<p>In ES6 a <highlight>const</highlight> represents a constant reference to a value. In other words, the pointer that the variable name is using cannot change in memory, but the thing the variable points to might change.
+A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.</p>
+
+<p>Here’s a simple example. In the code below we create a new variable with a constant reference to an Array. We can then add values onto the array and since this does not change the reference, everything works:
+<pre>
+<code class="language-javascript">const names = [];
+names.push( &ldquo;Jordan&rdquo; );
+console.log( names );
+</code>
+</pre>
+However, if we try to change the variable reference to a new array – even to one with the same contents – we will get a SyntaxError (“Assignment to constant variable”):
+<pre>
+<code class="language-javascript">const names = [];
+names = [];  // Error!</code>
+</pre>
+Const variable you declare must be immediately initialized, with a value that can’t be changed afterwards.
+<pre>
+<code class="language-javascript">
+const foo; // SyntaxError: missing = in const declaration
+const bar = 123;
+bar = 456; // TypeError: <code>bar</code> is read-only
+</code>
+</pre>
+Since for-of creates one binding (storage space for a variable) per loop iteration, it is OK to const-declare the loop variable:</p>
+
+<pre>
+<code class="language-javascript">
+for (const x of ['a', 'b']) {
+    console.log(x);
+}
+// Output:
+// a
+// b
+</code>
+</pre>
+<p class='custom-sub-heading'>Block scoping via const</p>
+
+Const creates variables that are block-scoped – they only exist within the innermost block that surrounds them. The following code demonstrates that the const-declared variable tmp only exists inside the then-block of the if statement:
+<pre>
+<code class="language-javascript">
+function func() {
+    if (true) {
+        const tmp = 123;
+    }
+    console.log(tmp); // ReferenceError: tmp is not defined
+}
+Block scoping means that you can shadow variables within a function:
+function func() {
+  const foo = 5;
+  if (···) {
+     const foo = 10; // shadows outer `foo`
+     console.log(foo); // 10
+  }
+  console.log(foo); // 5
+}
+</code>
+</pre>
+<p class='custom-sub-heading'>Const creates immutable variables</p>
+<pre>
+<code class="language-javascript">
+    const foo = 'abc';
+foo = 'def'; // TypeError
+</code>
+</pre>
+<p class='custom-sub-heading'>Const does not make the value immutable</p>
+Const only means that a variable always has the same value, but it does not mean that the value itself is or becomes immutable. For example, obj is a constant, but the value it points to is mutable – we can add a property to it:
+<pre>
+<code class="language-javascript">
+onst obj = {};
+obj.prop = 123;
+console.log(obj.prop); // 123
+</code>
+</pre>
+We cannot, however assign a different value to obj:
+<pre><code class="language-javascript">
+    obj = {}; // TypeError
+</code></pre>
+
+<p class='custom-sub-heading'>Const in loop bodies</p>
+Once a const variable has been created, it can’t be changed. But that doesn’t mean that you can’t re-enter its scope and start fresh, with a new value. For example, via a loop:
+<pre><code class="language-javascript">
+function logArgs(...args) {
+    for (const [index, elem] of args.entries()) {
+        const message = index + '. ' + elem;
+        console.log(message);
+    }
+}
+logArgs('Hello', 'everyone');
+// Output:
+// 0. Hello
+// 1. everyone
+</code></pre>
+
+<p class='custom-sub-heading'>Const in loop heads</p>
+The following loops allow you to declare variables in their heads:
+
+<highlight>for</highlight>
+<highlight>for-in</highlight>
+<highlight>for-of</highlight>
+
+Var-declaring a variable in the head of a for loop creates a single binding (storage space) for that variable:
+
+<pre><code class="language-javascript">
+const arr = [];
+for (var i=0; i < 3; i++) {
+    arr.push(() => i);
+}
+arr.map(x => x()); // [3,3,3]
+</code></pre>
+Every i in the bodies of the three arrow functions refers to the same binding, which is why they all return the same value.
+
+If you let-declare a variable, a new binding is created for each loop iteration:
+<pre><code class="language-javascript">
+const arr = [];
+for (let i=0; i < 3; i++) {
+    arr.push(() => i);
+}
+arr.map(x => x()); // [0,1,2]
+</code></pre>
+This time, each i refers to the binding of one specific iteration and preserves the value that was current at that time. Therefore, each arrow function returns a different value.
+
+<p class='custom-sub-heading'>Const versus let versus var</p>
+Prefer const. You can use it whenever a variable never changes its value. In other words: the variable should never be the left-hand side of an assignment or the operand of ++ or --. Changing an object that a const variable refers to is allowed:
+<pre><code class="language-javascript">
+ const foo = {};
+ foo.prop = 123; // OK
+ </code></pre>
+You can even use const in a for-of loop, because one (immutable) binding is created per loop iteration:
+<pre><code class="language-javascript">
+ for (const x of ['a', 'b']) {
+     console.log(x);
+ }
+ // Output:
+ // a
+ // b
+ </code></pre>
+Inside the body of the for-of loop, x can’t changed.
+Otherwise, use let – when the initial value of a variable changes later on.
+<pre><code class="language-javascript">
+ let counter = 0; // initial value
+ counter++; // change
+
+ let obj = {}; // initial value
+ obj = { foo: 123 }; // change
+ </code></pre>
+Avoid var.
+
+<p class='custom-heading'>Try it out here:</p>
+
+<p><a href="https://jsfiddle.net/shamkaushik/mfegs2uw/1/">https://jsfiddle.net/shamkaushik/mfegs2uw/1/</a></p>
+
+<p>Go to the following link and try to resolve all the errors in ES6 way.</p>
+
+<p><a href="http://tddbin.com/#?">http://tddbin.com/#?</a></p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://ecmascript2015.herokuapp.com/post/spreadoperator/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://ecmascript2015.herokuapp.com/post/spreadoperator/">Spread Operators</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://ecmascript2015.herokuapp.com/post/functionparameter/">functionparameter</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://ecmascript2015.herokuapp.com/post/functionparameter/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="https://ecmascript2015.herokuapp.com/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

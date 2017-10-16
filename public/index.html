@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.29" />
+
+  <title>ES6 Features</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://ecmascript2015.herokuapp.com/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://ecmascript2015.herokuapp.com/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://ecmascript2015.herokuapp.com/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="ES6 Features" href="https://ecmascript2015.herokuapp.com/index.xml" />
+  
+
+  
+
+  <link rel="shortcut icon" href="https://ecmascript2015.herokuapp.com/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="https://ecmascript2015.herokuapp.com/css/custom_style.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://ecmascript2015.herokuapp.com/">ES6 Features</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/arrow/">Arrow function</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/modules/">Modules</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/promises/">Promises</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/blockscoping/">Block Scoping</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/classes/">Classes</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/generator/">Generator</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/templatestring/">Template Strings</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/destructuring/">Destructuring</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/spreadoperator/">Spread Operators</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/constkeyword/">Constant Keywords</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/functionparameter/">Function Parameters</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/numbers/">Numbers</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/object/">Objects</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/reflect/">Reflect</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/maps/">Map</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/">Home</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small></small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>ES6 Features</h1>
+  <h2>5 new EcmaScript 2015 features</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="https://ecmascript2015.herokuapp.com/post/maps/">Map</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>03 Nov 2016, 14:48</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  hljs.initHighlightingOnLoad();
+What is this?
+The Map object is a simple key/value map. Any value (both objects and primitive values) may be used as either a key or a value. Syntax
+ new Map([iterable])   Iterable is an Array or other iterable object whose elements are key-value pairs (2-element Arrays). Each key-value pair is added to the new Map. null is treated as undefined. A Map object iterates its elements in insertion order — a for&hellip;of loop returns an array of [key, value] for each iteration.
+  </p>
+
+  
+  <footer>
+    <a href="https://ecmascript2015.herokuapp.com/post/maps/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://ecmascript2015.herokuapp.com/post/reflect/">reflect</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>02 Nov 2016, 14:41</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  hljs.initHighlightingOnLoad();
+What is this?
+ES6 introduces a new object referred as Reflect which exposes methods for object reflection. These new methods don’t throw exception on failure rather they return error, which makes it easy to write code involving object reflection. The Reflect Object
+The Reflect object is not a constructor that is,we cannot use it with new operator. It’s a plain object that exposes the methods related to object reflection as its own properties.
+  </p>
+
+  
+  <footer>
+    <a href="https://ecmascript2015.herokuapp.com/post/reflect/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://ecmascript2015.herokuapp.com/post/numbers/">numbers</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>26 Oct 2016, 13:59</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  hljs.initHighlightingOnLoad();
+What is this?
+This section describes new properties that the constructor Number has picked up in ES6. Four number-related functions are already available as global functions and have been added to Number, as methods: isFinite isNaN parseFloat parseInt Number.isFinite(number)
+Is number an actual number (neither Infinity nor -Infinity nor NaN)?  console.log(Number.isFinite(Infinity)); //false console.log(Number.isFinite(-Infinity)); //false console.log(Number.isFinite(NaN)); //false console.log(Number.isFinite(123)); //true   The advantage of this method is that it does not coerce its parameter to number (whereas the global function does):  console.
+  </p>
+
+  
+  <footer>
+    <a href="https://ecmascript2015.herokuapp.com/post/numbers/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://ecmascript2015.herokuapp.com/post/object/">Objects</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>24 Oct 2016, 13:12</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  hljs.initHighlightingOnLoad();
+What is this?
+ES6 focuses heavily on improving the utility of objects, which makes sense because nearly every value in JavaScript is some type of object. Additionally, the number of objects used in an average JavaScript program continues to increase as the complexity of JavaScript applications increases, meaning that programs are creating more objects all the time. With more objects comes the necessity to use them more effectively.
+  </p>
+
+  
+  <footer>
+    <a href="https://ecmascript2015.herokuapp.com/post/object/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://ecmascript2015.herokuapp.com/post/functionparameter/">functionparameter</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>18 Oct 2016, 16:25</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  hljs.initHighlightingOnLoad();
+What is this?
+A function can take parameters which are just values you supply to the function so that the function can do something utilising those values. These parameters are just like variables except that the values of these variables are defined when we call the function and are not assigned values within the function itself. Parameters are specified within the pair of parentheses in the function definition, separated by commas.
+  </p>
+
+  
+  <footer>
+    <a href="https://ecmascript2015.herokuapp.com/post/functionparameter/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://ecmascript2015.herokuapp.com/post/constkeyword/">const keyword</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>13 Oct 2016, 12:25</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  hljs.initHighlightingOnLoad();
+What is this?
+In ES6 a const represents a constant reference to a value. In other words, the pointer that the variable name is using cannot change in memory, but the thing the variable points to might change. A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.
+Here’s a simple example. In the code below we create a new variable with a constant reference to an Array.
+  </p>
+
+  
+  <footer>
+    <a href="https://ecmascript2015.herokuapp.com/post/constkeyword/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://ecmascript2015.herokuapp.com/post/spreadoperator/">Spread Operators</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>03 Oct 2016, 17:06</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+  </header>
+
+  <p>
+  hljs.initHighlightingOnLoad();
+What is this?
+The spread syntax allows an expression to be expanded in places where multiple arguments (for function calls) or multiple elements (for array literals) or multiple variables (for destructuring assignment) are expected.
+String Operators can be written as:
+var array = [[arg0ToN ,] &hellip;iterable [, arg0ToN]] func([args ,] &hellip;iterable [, args | &hellip;iterable])
+Parameters  iterable - Required. An iterable object.   arg0ToN - Optional. One or more elements of an array literal.
+  </p>
+
+  
+  <footer>
+    <a href="https://ecmascript2015.herokuapp.com/post/spreadoperator/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://ecmascript2015.herokuapp.com/post/destructuring/">Destructuring</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>02 Oct 2016, 22:36</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+  </header>
+
+  <p>
+  hljs.initHighlightingOnLoad();
+What is Destructuring?
+The destructuring assignment syntax is a JavaScript expression that makes it possible to extract data from arrays or objects into distinct variables. There are a lot of ways in which Destructuring can be used. A very basic way to use the Destructuring feature
+ var a,b,rest; [a,b] = [1,2]; console.log(a); //1 console.log(b); //2 [a,b,...rest] = [1,2,3,4,5,6,7,8]; console.log(a);//1 console.log(b);//2 console.log(rest);//[3,4,5,6,7,8]   Explanation
+Here the variables a and b are assigned in one-line using the destructuring functionality of ecmascript2015.
+  </p>
+
+  
+  <footer>
+    <a href="https://ecmascript2015.herokuapp.com/post/destructuring/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://ecmascript2015.herokuapp.com/post/generator/">Generator</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>30 Sep 2016, 14:26</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  hljs.initHighlightingOnLoad();
+What is this?
+Generators, a new feature of ECMAScript 6 are functions that can be paused and resumed. This helps with many applications: iterators, asynchronous programming, etc. Their primary use case is in representing lazy (possibly infinite) sequences.
+Generator functions are indicated by inserting a star character * after the function keyword (it doesn’t matter if the star is directly next to function or if there’s some whitespace between them).
+  </p>
+
+  
+  <footer>
+    <a href="https://ecmascript2015.herokuapp.com/post/generator/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://ecmascript2015.herokuapp.com/post/templatestring/">Template String</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>30 Sep 2016, 14:21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+  </header>
+
+  <p>
+  hljs.initHighlightingOnLoad();
+What is this?
+ECMAScript 6 comes with the new template strings feature. Among other wonders, a template string directly supports multiline strings:  var myTooLongString = `A long time ago, in a galaxy far far away.... It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire`;   Because all characters are significant inside a template string, I cannot add leading whitespaces.
+  </p>
+
+  
+  <footer>
+    <a href="https://ecmascript2015.herokuapp.com/post/templatestring/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <i class="fa fa-chevron-left"></i>
+  
+  <span>&nbsp;1 / 2&nbsp;</span>
+  
+  <a href="https://ecmascript2015.herokuapp.com/page/2/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="https://ecmascript2015.herokuapp.com/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

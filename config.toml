@@ -1,0 +1,76 @@
+baseurl = "https://ecmascript2015.herokuapp.com/"
+languageCode = "en-us"
+title = "CSS 3 Best Practicess"
+theme = "blackburn"
+canonifyurls = true
+
+[params]
+  # Shown in the home page
+  brand = "CSS 3 Best Practices"
+  custom_css = ["css/custom_style.css"]
+
+[menu]
+  # Shown in the side menu.
+  [[menu.main]]
+    name = "Home"
+    pre = ""
+    weight = 0
+    identifier = "home"
+    url = "/posts/index/"
+  [[menu.main]]
+    name = "Animation"
+    pre = ""
+    weight = 1
+    url = "/post/animation/"
+  [[menu.main]]
+    name = "Background"
+    pre = ""
+    weight = 2
+    identifier = "Background"
+    url = "/post/background/"
+  [[menu.main]]
+    name = "Border"
+    pre = ""
+    weight = 3
+    identifier = "Border"
+    url = "/post/border/"
+  [[menu.main]]
+    name = "Box Shadow"
+    pre = ""
+    weight = 4
+    url = "/post/box-shadow/"
+  [[menu.main]]
+    name = "CSS3 Text"
+    pre = ""
+    weight = 5
+    url = "/post/css3text/"
+  [[menu.main]]
+    name = "Filter"
+    pre = ""
+    weight = 6
+    url = "/post/filters/"
+    [[menu.main]]
+    name = "Flex-Box"
+    pre = ""
+    weight = 7
+    url = "/post/flexiblebox/"
+  [[menu.main]]
+    name = "Gradients"
+    pre = ""
+    weight = 8
+    url = "/post/gradients/"
+  [[menu.main]]
+    name = "Multi-Column"
+    pre = ""
+    weight = 9
+    url = "/post/multi-column/"
+  [[menu.main]]
+    name = "Transforms"
+    pre = ""
+    weight = 10
+    url = "/post/transforms/"
+  [[menu.main]]
+    name = "User Interface"
+    pre = ""
+    weight = 11
+    url = "/post/userinterface/"

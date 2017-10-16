@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.29" />
+
+  <title>Generator &middot; ES6 Features</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://ecmascript2015.herokuapp.com/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://ecmascript2015.herokuapp.com/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://ecmascript2015.herokuapp.com/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+
+  <link rel="shortcut icon" href="https://ecmascript2015.herokuapp.com/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="https://ecmascript2015.herokuapp.com/css/custom_style.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://ecmascript2015.herokuapp.com/">ES6 Features</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/arrow/">Arrow function</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/modules/">Modules</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/promises/">Promises</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/blockscoping/">Block Scoping</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/classes/">Classes</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/generator/">Generator</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/templatestring/">Template Strings</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/destructuring/">Destructuring</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/spreadoperator/">Spread Operators</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/constkeyword/">Constant Keywords</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/functionparameter/">Function Parameters</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/numbers/">Numbers</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/object/">Objects</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/reflect/">Reflect</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/maps/">Map</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/">Home</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small></small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Generator</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>30 Sep 2016, 14:26</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+</div>
+
+  <p><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/androidstudio.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script></p>
+
+<p class='custom-heading'>What is this?</p>
+
+<p>Generators, a new feature of ECMAScript 6 are functions that can be paused and resumed. This helps with many applications: iterators, asynchronous programming, etc. Their primary use case is in representing lazy (possibly infinite) sequences.</p>
+
+<p>Generator functions are indicated by inserting a star character * after the function keyword (it doesn’t matter if the star is directly next to function or if there’s some whitespace between them). The yield keyword is used inside of generators to specify the values that the iterator should return when next() is called. So if you want to return three different values for each successive call to next(), you can do so as follows:</p>
+
+<pre>
+<code class="language-javascript">
+       function* createIterator() {
+          yield 1;
+          yield 2;
+          yield 3;
+        }
+        // generators are called like regular functions but return an iterator let iterator = createIterator();
+        let iterator = createIterator();
+
+        console.log(iterator.next().value); //1
+        console.log(iterator.next().value); //2
+        console.log(iterator.next().value); //3
+}
+</code>
+</pre>
+
+<p>There are four ways in which you can create generators:</p>
+
+<ol>
+<li>Via a generator function declaration:</li>
+</ol>
+
+<pre>
+<code class="language-javascript">
+    function* genFunc() { ··· }
+    let genObj = genFunc();
+
+</code>
+</pre>
+
+<ol>
+<li>Via a generator function expression:</li>
+</ol>
+
+<pre>
+<code class="language-javascript">
+    const genFunc = function* () { ··· };
+    let genObj = genFunc();
+    
+</code>
+</pre>
+
+<ol>
+<li>Via a generator method definition in an object literal:</li>
+</ol>
+
+<pre>
+<code class="language-javascript">
+    let obj = {
+        * generatorMethod() {
+            ···
+        }
+    };
+    let genObj = obj.generatorMethod();
+    
+</code>
+</pre>
+
+<ol>
+<li>Via a generator method definition in a class definition (which can be a class declaration or a class expression):</li>
+</ol>
+
+<pre>
+<code class="language-javascript">
+    class MyClass {
+        * generatorMethod() {
+            ···
+        }
+    }
+    let myInst = new MyClass();
+    let genObj = myInst.generatorMethod();
+    
+</code>
+</pre>
+<div class='warning'>
+Generator functions are an important part of ECMAScript 6, and since they are just functions, they can be used in all the same places.
+</div>
+
+<p class='custom-sub-heading'>Generator Function Expressions</p>
+
+
+Generators can be created using function expressions in the same way as using function declarations by including a star (*) character between the function keyword and the opening paren, for example:
+
+<pre>
+<code class="language-javascript">
+  let createIterator = function *(items) { for (let i=0; i < items.length; i++) {
+          yield items[i];
+      }
+  };
+  let iterator = createIterator([1, 2, 3]);
+  console.log(JSON.stringify(iterator.next())); //{"value":1,"done":false}
+  console.log(JSON.stringify(iterator.next())); //{"value":2,"done":false}
+  console.log(JSON.stringify(iterator.next())); //{"value":3,"done":false}
+  console.log(JSON.stringify(iterator.next())); //{"done":true}
+  
+  // for all further calls
+  console.log(JSON.stringify(iterator.next())); //{"done":true}
+
+</code>
+</pre>
+
+<p>In this code, createIterator() is a generator function expression rather than a function declaration (as in the previous example). Since the function expression is anonymous, the asterisk is between the function keyword and the opening parentheses. Otherwise, this example is the same as the previous one using a generator function declaration.</p>
+
+<div class='info'>
+<b>It is not possible to create an arrow function that is also a generator.</b>
+</div>
+
+<p class='custom-sub-heading'>Generator Object Methods</p>
+
+<p>Because generators are just functions, they can be added to objects the same way as any other functions. For example, you can use an ECMAScript 5-style object literal with a function expression:</p>
+
+<pre>
+<code class="language-javascript">
+  var o = {
+  reateIterator: function *(items) {
+    for (let i=0; i < items.length; i++) {
+        yield items[i];
+    }
+  }
+};
+
+let iterator = o.createIterator([1, 2, 3]);
+
+</code>
+</pre>
+
+<p>You can also use the ECMAScript 6 method shorthand by prepending the method name with a star (*):
+<pre>
+<code class="language-javascript">
+  var o = {
+    *createIterator(items) {
+      for (let i=0; i &lt; items.length; i++) {
+        yield items[i];
+    }
+  }
+};
+let iterator = o.createIterator([1, 2, 3]);
+</code>
+</pre></p>
+
+<p>This example is functionally equivalent to the previous one, the only difference is the syntax used. Because the method is defined using shorthand and there is no function keyword, the star is placed immediately before the method name (though there may be whitespace between the star and the method name).</p>
+
+<p class='custom-sub-heading'>Roles played by generators</p>
+Generators can play three roles:</br></br>
+
+    1. <b>Iterators (data producers)</b>: Each yield can return a value via next(), which means that generators can produce sequences of values via loops and recursion. Due to generator objects implementing the interface Iterable, these sequences can be processed by any ECMAScript 6 construct that supports iterables. Two examples are: for-of loops and the spread operator (...).</br></br>
+
+    2. <b>Observers (data consumers)</b>: yield can also receive a value from next() (via a parameter). That means that generators become data consumers that pause until a new value is pushed into them via next().</br></br>
+
+    3. <b>Coroutines (data producers and consumers)</b>: Given that generators are pausable and can be both data producers and data consumers, not much work is needed to turn them into coroutines (cooperatively multitasked tasks).</br></br>
+
+
+<p class='custom-heading'>Try it out here:</p>
+
+<p><a href="https://jsfiddle.net/qk7vL83e/">https://jsfiddle.net/qk7vL83e/</a></p>
+
+<p class='custom-heading'>Exercise:</p>
+
+<p>Go to the following link and try to resolve all the errors in ES6 way.</p>
+
+<p><a href="http://tddbin.com/#?kata=es6/language/generator/creation">http://tddbin.com/#?kata=es6/language/generator/creation</a> <br/>
+<a href="http://tddbin.com/#?kata=es6/language/generator/iterator">http://tddbin.com/#?kata=es6/language/generator/iterator</a> <br/>
+<a href="http://tddbin.com/#?kata=es6/language/generator/yield">http://tddbin.com/#?kata=es6/language/generator/yield</a> <br/>
+<a href="http://tddbin.com/#?kata=es6/language/generator/send-value">http://tddbin.com/#?kata=es6/language/generator/send-value</a> <br/>
+<a href="http://tddbin.com/#?kata=es6/language/generator/send-function">http://tddbin.com/#?kata=es6/language/generator/send-function</a> <br/>
+<a href="http://tddbin.com/#?kata=es6/language/generator/return">http://tddbin.com/#?kata=es6/language/generator/return</a><br/></p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://ecmascript2015.herokuapp.com/post/templatestring/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://ecmascript2015.herokuapp.com/post/templatestring/">Template String</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://ecmascript2015.herokuapp.com/post/destructuring/">Destructuring</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://ecmascript2015.herokuapp.com/post/destructuring/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="https://ecmascript2015.herokuapp.com/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

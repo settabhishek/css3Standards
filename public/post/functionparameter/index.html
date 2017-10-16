@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.29" />
+
+  <title>functionparameter &middot; ES6 Features</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://ecmascript2015.herokuapp.com/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://ecmascript2015.herokuapp.com/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://ecmascript2015.herokuapp.com/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+
+  <link rel="shortcut icon" href="https://ecmascript2015.herokuapp.com/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="https://ecmascript2015.herokuapp.com/css/custom_style.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://ecmascript2015.herokuapp.com/">ES6 Features</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/arrow/">Arrow function</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/modules/">Modules</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/promises/">Promises</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/blockscoping/">Block Scoping</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/classes/">Classes</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/generator/">Generator</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/templatestring/">Template Strings</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/destructuring/">Destructuring</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/spreadoperator/">Spread Operators</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/constkeyword/">Constant Keywords</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/functionparameter/">Function Parameters</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/numbers/">Numbers</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/object/">Objects</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/reflect/">Reflect</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/post/maps/">Map</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ecmascript2015.herokuapp.com/">Home</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small></small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>functionparameter</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>18 Oct 2016, 16:25</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+</div>
+
+  <p><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/androidstudio.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script></p>
+
+<p class='custom-heading'>What is this?</p>
+A function can take parameters which are just values you supply to the function so that the function can do something utilising those values. These parameters are just like variables except that the values of these variables are defined when we call the function and are not assigned values within the function itself.
+
+Parameters are specified within the pair of parentheses in the function definition, separated by commas. When we call the function, we supply the values in the same way. Note the terminology used - the names given in the function definition are called <highlight>parameters</highlight> whereas the values you supply in the function call are called <highlight>arguments</highlight>.
+<pre>
+<code class="language-javascript">function myFunction(param1,param2,param3) {
+   statements
+}
+</code>
+</pre>
+There are 2 types of function parameters available in es6:<br>
+
+<highlight>Default Parameters</highlight><br>
+<highlight>Rest Parameters</highlight>
+<p class='custom-sub-heading'>How to use default parameters?</p>
+Default parameter are a way to pass a value to the function parameter when no value is being passed by the callee during invocation.
+ES6 allows for functions to be called with less parameters than the function declares.
+<pre>
+<code class="language-javascript">function getData(data, useCache=true) {
+    if (useCache) {
+        console.log('using cache for', data);
+    }
+    else {
+        console.log('not using cache', data);
+    }
+};
+// `useCache` is missing and is `undefined`.
+// therefore `useCache `defaults to `true`
+getData({q:'churches+in+Pittsburg'});
+</code>
+</pre>
+
+With ES6, the function body doesn’t have to deal with the defaulting logic. It’s in the function header, which is where it should be. Also it’s clear to any readers of the code that <highlight>useCache</highlight> will have its value defaulted to <highlight>true</highlight> when left unspecified.
+
+Parameters with a default value are considered optional. Therefore if you have a parameter that is optional, but doesn’t have a default value, you may want to consider giving it an explicit default of 
+<highlight>undefined</highlight> to visually mark it as optional.
+
+
+<p class='custom-sub-heading'>Non-primitive default values</p>
+
+<p>Unlike other programming languages that support default values,a default value in ES6 does not have to be a primitive value like <highlight>String</highlight>, <highlight>Number</highlight> or <highlight>Boolean</highlight>. A default value can be an <highlight>Object</highlight>, <highlight>Array</highlight> or <highlight>Function</highlight>. The default value can even be the result of an expression or function call.
+<pre>
+<code class="language-javascript">
+function getWidth() {
+    console.log(&lsquo;getWidth called&rsquo;);
+    return 7;
+}
+function drawRect(
+    width=getWidth(),
+    height=width * 2,
+    options={color:&lsquo;red&rsquo;}
+) {
+    console.log(width, height, options);
+}
+// <code>getWidth</code> is called to retrieve default
+// value for <code>width</code> since it was unspecified.
+// output:
+//   getWidth called
+//   7, 14, {color:&lsquo;red&rsquo;}
+drawRect();
+// <code>getWidth</code> is not called because <code>width</code> is
+// specified. <code>height</code> is still defaulted to
+// 2x <code>width</code>.
+// output:
+//    17, 34, {color:&lsquo;red&rsquo;}
+drawRect(17);
+// <code>height</code> is no longer defaulted to 2x <code>width</code>
+// but options are still defaulted.
+// ouput:
+//    4, 11, {color:&lsquo;red&rsquo;}
+drawRect(4, 11);
+// nothing is defaulted
+// output:
+//    7,5, 11, {color:&lsquo;blue&rsquo;}
+drawRect(7.5, 11, {color:&lsquo;blue&rsquo;});
+</code>
+</pre></p>
+
+<p><highlight>Note:</highlight><br>
+ The default value for height is an expression that uses the value of width. You’re free to use other variables declared in the function header as long as they come before the variable in question. It’s also worth noting that expressions or functions are not executed if the variable does not need to be defaulted.</p>
+
+<p class='custom-sub-heading'>Default parameter ordering</p>
+Also unlike other programming languages, in ES6 the default values can be anywhere in the function header, even before parameters that do not have default values.
+
+Let’s take a look at an example:
+<pre>
+    <code class="language-javascript">function drawCube(x, y=7, z) {
+    console.log('cube', x, y, z);
+};
+// `y` is defaulted, but `x` & `z` are not
+// so they are `undefined`.
+// output: cube, undefined, y, undefined
+drawCube();
+// `y` is still defaulted, but `z` isn't.
+// output: cube, 2.5, 7, undefined
+drawCube(2.5);
+// output: cube, 9, 15, undefined
+drawCube(9, 15);
+// output: cube, 4, 1.7, 18
+drawCube(4, 1.7, 18);
+// `y` is once again defaulted
+// output: cube, 11, 7, 8.8
+drawCube(11, undefined, 8.8);
+// `null` does not trigger `y` to default
+// output: cube, 14, null, 72
+drawCube(14, null, 72);</code>
+</pre>
+
+As you can see, the default for <highlight>y </highlight>isn’t triggered unless <highlight>y </highlight> and <highlight>z </highlight> are unspecified or <highlight>y </highlight> is explicitly set to be <highlight>undefined</highlight>. In a nutshell, <highlight>undefined</highlight> triggers default values.
+<p class='custom-sub-heading'>How to use rest parameters?</p>
+
+<p>We just learned that <highlight>default</highlight> parameters handle the case where a caller passes less parameters than what a function declares. ES6 also allows for functions to be called with more parameters than the function declares. That’s where <highlight>rest</highlight> parameters come in.</p>
+
+<p>ES6 introduces the rest operator, three dots (…) that precede a named parameter. That parameter is now a rest parameter that is an Array containing the rest of the parameters (hence the name!).
+<pre>
+    <code class="language-javascript">
+function join(separator, &hellip;values) {
+    return values.join(separator);
+}
+// all of the parameters after the first
+// are gathered together into <code>values</code>
+// which is a true <code>Array</code>
+// output: &ldquo;one//two//three&rdquo;
+console.log(join(&lsquo;//&rsquo;, &lsquo;one&rsquo;, &lsquo;two&rsquo;, &lsquo;three&rsquo;));
+</code>
+</pre></p>
+
+<p>In the example, <highlight>values</highlight> is an <highlight>Array</highlight> of all of the parameters passed after <highlight>&rsquo;//&rsquo;</highlight> making it much easier to use. Also, it’s much clearer looking at the <highlight>join</highlight> function that it does take an additional unlimited set of parameters.
+<p class='custom-sub-heading'>One rest parameter per function</p>
+One caveat with rest parameters is that unlike default parameters there can only be one per function and it must be the last parameter declared in the function header. Attempting to have multiple rest parameters or putting one before other parameters will throw a <highlight>SyntaxError</highlight>:
+<pre><code>function afterRest(first, &hellip;second, third) {
+    // SyntaxError: parameter after rest parameter
+}
+function multipleRest(first, &hellip;second, &hellip;third) {
+    // SyntaxError: parameter after rest parameter
+}</code></pre></p>
+
+<p class='custom-heading'>Try it out here:</p>
+
+<p><a href="http://jsbin.com/pafoyu/13/edit?js,console">http://jsbin.com/pafoyu/13/edit?js,console</a></p>
+
+<p class='custom-heading'>Exercise:</p>
+
+<p>Go to the following link and try to resolve all the errors in ES6 way.<br>
+<a href="http://tddbin.com/#?">http://tddbin.com/#?</a></p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://ecmascript2015.herokuapp.com/post/constkeyword/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://ecmascript2015.herokuapp.com/post/constkeyword/">const keyword</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://ecmascript2015.herokuapp.com/post/object/">Objects</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://ecmascript2015.herokuapp.com/post/object/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="https://ecmascript2015.herokuapp.com/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on ES6 Features</title>
+    <link>https://ecmascript2015.herokuapp.com/post/</link>
+    <description>Recent content in Posts on ES6 Features</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Nov 2016 14:48:29 +0530</lastBuildDate>
+    
+	<atom:link href="https://ecmascript2015.herokuapp.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Map</title>
+      <link>https://ecmascript2015.herokuapp.com/post/maps/</link>
+      <pubDate>Thu, 03 Nov 2016 14:48:29 +0530</pubDate>
+      
+      <guid>https://ecmascript2015.herokuapp.com/post/maps/</guid>
+      <description>hljs.initHighlightingOnLoad();
+What is this?
+The Map object is a simple key/value map. Any value (both objects and primitive values) may be used as either a key or a value. Syntax
+ new Map([iterable])   Iterable is an Array or other iterable object whose elements are key-value pairs (2-element Arrays). Each key-value pair is added to the new Map. null is treated as undefined. A Map object iterates its elements in insertion order — a for&amp;hellip;of loop returns an array of [key, value] for each iteration.</description>
+    </item>
+    
+    <item>
+      <title>reflect</title>
+      <link>https://ecmascript2015.herokuapp.com/post/reflect/</link>
+      <pubDate>Wed, 02 Nov 2016 14:41:55 +0530</pubDate>
+      
+      <guid>https://ecmascript2015.herokuapp.com/post/reflect/</guid>
+      <description>hljs.initHighlightingOnLoad();
+What is this?
+ES6 introduces a new object referred as Reflect which exposes methods for object reflection. These new methods don’t throw exception on failure rather they return error, which makes it easy to write code involving object reflection. The Reflect Object
+The Reflect object is not a constructor that is,we cannot use it with new operator. It’s a plain object that exposes the methods related to object reflection as its own properties.</description>
+    </item>
+    
+    <item>
+      <title>numbers</title>
+      <link>https://ecmascript2015.herokuapp.com/post/numbers/</link>
+      <pubDate>Wed, 26 Oct 2016 13:59:24 +0530</pubDate>
+      
+      <guid>https://ecmascript2015.herokuapp.com/post/numbers/</guid>
+      <description>hljs.initHighlightingOnLoad();
+What is this?
+This section describes new properties that the constructor Number has picked up in ES6. Four number-related functions are already available as global functions and have been added to Number, as methods: isFinite isNaN parseFloat parseInt Number.isFinite(number)
+Is number an actual number (neither Infinity nor -Infinity nor NaN)?  console.log(Number.isFinite(Infinity)); //false console.log(Number.isFinite(-Infinity)); //false console.log(Number.isFinite(NaN)); //false console.log(Number.isFinite(123)); //true   The advantage of this method is that it does not coerce its parameter to number (whereas the global function does):  console.</description>
+    </item>
+    
+    <item>
+      <title>Objects</title>
+      <link>https://ecmascript2015.herokuapp.com/post/object/</link>
+      <pubDate>Mon, 24 Oct 2016 13:12:10 +0530</pubDate>
+      
+      <guid>https://ecmascript2015.herokuapp.com/post/object/</guid>
+      <description>hljs.initHighlightingOnLoad();
+What is this?
+ES6 focuses heavily on improving the utility of objects, which makes sense because nearly every value in JavaScript is some type of object. Additionally, the number of objects used in an average JavaScript program continues to increase as the complexity of JavaScript applications increases, meaning that programs are creating more objects all the time. With more objects comes the necessity to use them more effectively.</description>
+    </item>
+    
+    <item>
+      <title>functionparameter</title>
+      <link>https://ecmascript2015.herokuapp.com/post/functionparameter/</link>
+      <pubDate>Tue, 18 Oct 2016 16:25:53 +0530</pubDate>
+      
+      <guid>https://ecmascript2015.herokuapp.com/post/functionparameter/</guid>
+      <description>hljs.initHighlightingOnLoad();
+What is this?
+A function can take parameters which are just values you supply to the function so that the function can do something utilising those values. These parameters are just like variables except that the values of these variables are defined when we call the function and are not assigned values within the function itself. Parameters are specified within the pair of parentheses in the function definition, separated by commas.</description>
+    </item>
+    
+    <item>
+      <title>const keyword</title>
+      <link>https://ecmascript2015.herokuapp.com/post/constkeyword/</link>
+      <pubDate>Thu, 13 Oct 2016 12:25:22 +0530</pubDate>
+      
+      <guid>https://ecmascript2015.herokuapp.com/post/constkeyword/</guid>
+      <description>hljs.initHighlightingOnLoad();
+What is this?
+In ES6 a const represents a constant reference to a value. In other words, the pointer that the variable name is using cannot change in memory, but the thing the variable points to might change. A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.
+Here’s a simple example. In the code below we create a new variable with a constant reference to an Array.</description>
+    </item>
+    
+    <item>
+      <title>Spread Operators</title>
+      <link>https://ecmascript2015.herokuapp.com/post/spreadoperator/</link>
+      <pubDate>Mon, 03 Oct 2016 17:06:21 +0530</pubDate>
+      
+      <guid>https://ecmascript2015.herokuapp.com/post/spreadoperator/</guid>
+      <description>hljs.initHighlightingOnLoad();
+What is this?
+The spread syntax allows an expression to be expanded in places where multiple arguments (for function calls) or multiple elements (for array literals) or multiple variables (for destructuring assignment) are expected.
+String Operators can be written as:
+var array = [[arg0ToN ,] &amp;hellip;iterable [, arg0ToN]] func([args ,] &amp;hellip;iterable [, args | &amp;hellip;iterable])
+Parameters  iterable - Required. An iterable object.   arg0ToN - Optional. One or more elements of an array literal.</description>
+    </item>
+    
+    <item>
+      <title>Destructuring</title>
+      <link>https://ecmascript2015.herokuapp.com/post/destructuring/</link>
+      <pubDate>Sun, 02 Oct 2016 22:36:23 +0530</pubDate>
+      
+      <guid>https://ecmascript2015.herokuapp.com/post/destructuring/</guid>
+      <description>hljs.initHighlightingOnLoad();
+What is Destructuring?
+The destructuring assignment syntax is a JavaScript expression that makes it possible to extract data from arrays or objects into distinct variables. There are a lot of ways in which Destructuring can be used. A very basic way to use the Destructuring feature
+ var a,b,rest; [a,b] = [1,2]; console.log(a); //1 console.log(b); //2 [a,b,...rest] = [1,2,3,4,5,6,7,8]; console.log(a);//1 console.log(b);//2 console.log(rest);//[3,4,5,6,7,8]   Explanation
+Here the variables a and b are assigned in one-line using the destructuring functionality of ecmascript2015.</description>
+    </item>
+    
+    <item>
+      <title>Generator</title>
+      <link>https://ecmascript2015.herokuapp.com/post/generator/</link>
+      <pubDate>Fri, 30 Sep 2016 14:26:40 +0530</pubDate>
+      
+      <guid>https://ecmascript2015.herokuapp.com/post/generator/</guid>
+      <description>hljs.initHighlightingOnLoad();
+What is this?
+Generators, a new feature of ECMAScript 6 are functions that can be paused and resumed. This helps with many applications: iterators, asynchronous programming, etc. Their primary use case is in representing lazy (possibly infinite) sequences.
+Generator functions are indicated by inserting a star character * after the function keyword (it doesn’t matter if the star is directly next to function or if there’s some whitespace between them).</description>
+    </item>
+    
+    <item>
+      <title>Template String</title>
+      <link>https://ecmascript2015.herokuapp.com/post/templatestring/</link>
+      <pubDate>Fri, 30 Sep 2016 14:21:45 +0530</pubDate>
+      
+      <guid>https://ecmascript2015.herokuapp.com/post/templatestring/</guid>
+      <description>hljs.initHighlightingOnLoad();
+What is this?
+ECMAScript 6 comes with the new template strings feature. Among other wonders, a template string directly supports multiline strings:  var myTooLongString = `A long time ago, in a galaxy far far away.... It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire`;   Because all characters are significant inside a template string, I cannot add leading whitespaces.</description>
+    </item>
+    
+    <item>
+      <title>ES6 New Features overview</title>
+      <link>https://ecmascript2015.herokuapp.com/post/home/</link>
+      <pubDate>Fri, 23 Sep 2016 12:21:49 +0100</pubDate>
+      
+      <guid>https://ecmascript2015.herokuapp.com/post/home/</guid>
+      <description>EcmaScript is the standardized scripting language that JavaScript (and some other languages, like ActionScript) implement. If you think EcmaScript is a terrible name, you’re not alone. Brendan Eich, the original developer of JavaScript, once wrote that the name EcmaScript sounds like a skin disease. Naming aside, JavaScript is one of the most important languages in existence today. Every browser has a JavaScript interpreter, JavaScript on the server is becoming ever more popular, and now it’s possible to use JavaScript for desktop (Chrome Apps), nativish mobile (PhoneGap) and native Windows 8 apps.</description>
+    </item>
+    
+    <item>
+      <title>Arrow Function</title>
+      <link>https://ecmascript2015.herokuapp.com/post/arrow/</link>
+      <pubDate>Fri, 23 Sep 2016 11:56:13 +0100</pubDate>
+      
+      <guid>https://ecmascript2015.herokuapp.com/post/arrow/</guid>
+      <description>hljs.initHighlightingOnLoad();
+What is this?
+Arrow functions – also called “fat arrow” functions, from CoffeeScript (a transcompiled language) are a more concise syntax for writing function expressions. They utilize a new token, =&amp;gt;, that looks like a fat arrow. Arrow functions are anonymous and change the way this binds in functions.
+Arrow functions make our code more concise, and simplify function scoping and the this keyword. They are one-line mini functions which work much like Lambdas in other languages like C# or Python.</description>
+    </item>
+    
+    <item>
+      <title>Block Scoping</title>
+      <link>https://ecmascript2015.herokuapp.com/post/blockscoping/</link>
+      <pubDate>Fri, 23 Sep 2016 11:53:50 +0100</pubDate>
+      
+      <guid>https://ecmascript2015.herokuapp.com/post/blockscoping/</guid>
+      <description>Block Scoping
+Scoping in JavaScript is confusing for developers with a C/C#/Java background. Hoisting can add to that confusion. In ES5, variables are either globally or locally function scoped. The lack of block scoping has caused confusion in ES5, and resulted in some interesting patterns to achieve block scope. In ES6, you can use the new let keyword to achieve block scoping. http://www.es6fiddle.net/hrut3qnv/
+var num = 0; //globally scoped
+for (let i = 0; i &amp;lt; 10; i++) { //i is block scoped num += i; console.</description>
+    </item>
+    
+    <item>
+      <title>Promises</title>
+      <link>https://ecmascript2015.herokuapp.com/post/promises/</link>
+      <pubDate>Fri, 23 Sep 2016 11:49:29 +0100</pubDate>
+      
+      <guid>https://ecmascript2015.herokuapp.com/post/promises/</guid>
+      <description>hljs.initHighlightingOnLoad();
+What is this?
+Promises give us a way to handle asynchronous processing in a more synchronous fashion. They represent a value that we can handle at some point in the future. And, better than callbacks here, Promises give us guarantees about that future value, specifically:
+ No other registered handlers of that value can change it (the Promise is immutable) We are guaranteed to receive the value, regardless of when we register a handler for it, even if it&#39;s already resolved (in contrast to events, which can incur race conditions).</description>
+    </item>
+    
+    <item>
+      <title>Modules</title>
+      <link>https://ecmascript2015.herokuapp.com/post/modules/</link>
+      <pubDate>Fri, 23 Sep 2016 11:48:26 +0100</pubDate>
+      
+      <guid>https://ecmascript2015.herokuapp.com/post/modules/</guid>
+      <description>hljs.initHighlightingOnLoad();
+What is this?
+JavaScript modules introduced in ECMAScript 6 is defined in its own file. The functions or variables defined in a module are not visible outside unless you explicitly export them. This means that you can write code in your module and only export those values which should be accessed by other parts of your app. ES6 modules are declarative in nature. To export certain variables from a module you just use the keyword export.</description>
+    </item>
+    
+    <item>
+      <title>Classes</title>
+      <link>https://ecmascript2015.herokuapp.com/post/classes/</link>
+      <pubDate>Fri, 23 Sep 2016 11:42:03 +0100</pubDate>
+      
+      <guid>https://ecmascript2015.herokuapp.com/post/classes/</guid>
+      <description>hljs.initHighlightingOnLoad();
+What is this?
+JavaScript classes introduced in ECMAScript 6 are syntactical sugar over JavaScript&amp;rsquo;s existing prototype-based inheritance. The class syntax is not introducing a new object-oriented inheritance model to JavaScript. JavaScript classes provide a much simpler and clearer syntax to create objects and deal with inheritance.
+Class concept in ES6 is almost similar like classes in Python or Java. There are 2 ways we can define classes. Class declarations Class expression</description>
+    </item>
+    
+  </channel>
+</rss>
